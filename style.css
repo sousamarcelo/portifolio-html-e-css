@@ -1,0 +1,67 @@
+/* importado do sitem https://fonts.google.com/, biblioteca de fontes do googles*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;400;600&display=swap');
+
+
+*{                                                     /* foi aplicado o reset CSS em todas as tags com o "*" para tirar qualquer formatação padrão que um ou outro browser possa ter, evitando espaços indesejados ou algo do tipo*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;                                     /* "vs" definindo a altura da tela em 100% do meta dado criado no html chamado "viewport" que fazer a inicializaçao padrão das elas em dispositivos */
+    box-sizing: border-box;                            /* faz o controle dinamico para que os elemetos contidos na tag filho não transborde alem do elemento pai, se mantendo dentro do filho */
+    background-color: black;                         /* cor do plano de funco*/
+    color: white;                                    /* cor do texto*/
+}
+
+.titulo-destaque {                                     /** para selecionar um classe em css é utilizado o "ponto" + o nome da classe criada la no HTML, essa classe fazer com que a alteração desejada seja feita somente na tag desejada, mesmo que haja outras tags com o mesmo nome, será diferenciada pela class */
+    color: #22f4fd;
+}
+
+/*
+Flexbox é uma ferramenta do CSS que visa organizar os elementos de uma página HTML de forma dinâmica e mantendo um layout flexível
+fonte: https://css-tricks.com/snippets/css/a-guide-to-flexbox
+a tag main foi transformada em um flax box para controlar os espassamentos 
+*/
+.apresentacao { 
+    margin: 10% 15%;                                        /* ajustando primeiro na vertical 10% depois nas laterais 15%*/
+    display: flex;                                          /* or inline-flex - habilitando o flex box na classe do main(.apresentacao), por que é nela que estão as informações que deverão ficar dentro do flex box, o flex box cria uma area delimitada dentro da tag pai onde ficaram todas as informaões desejadas */
+    align-items: center;                                    /* centralizando as informação, por que o display: flex deita tudo na mesa linha porem desalinhaod */
+    justify-content: space-between;                         /* controlando espassamento entre a section e a img ambos dentro do main que é um flexbox */
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;                                          /* ativando flax box para essa classe*/
+    flex-direction:column;                                  /* via flex box ajustando posicionamento vertical*/
+    gap: 40px;                                              /*Propriedade do flex box, trata o espassamento entre um elemento e outro, nessa caso ele trabalhara juntamento com o parametro acima ajustado o espaço verfical*/
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;                      /* fonte krona one retirado da api do google fontes que está no importe. esse padrão está no proprio site*/
+   
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;                     /* fonte montserrat com peso 400 (a referencia do figma do estilo de letra) retirado da api do google fontes que está no importe. esse padrão está no proprio site*/
+}
+
+.apresentacao__links{                                          /* seletor da regirão onde estão o botões, com flex box fica muito mais facil posicionalos na tela */
+    display: flex;                                             /* inicializando flax box na div dos links para utilizar os recursos*/
+    justify-content: space-between;
+}
+
+.apresentacao__links__link{                                    /* seletor especifico dos link, como são pareceido, os dois estão na mesma classe, configurando... */
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;                                          /* peso da fonte retirado da api montserrat 600 seguindo padrão do figma*/ 
+    padding: 21.5px 0;                                         /* valores para vertical e horizontal, com o não sera alterado o valor horizontal foi incluido 0 para ele */
+    text-decoration: none;                                     /* retirando o subliando defaut dos links, é uma decoração padrão, basta colocar esse parametro como none */
+    color: #000;    
+    font-family: 'Montserrat', sans-serif;                             
+}
