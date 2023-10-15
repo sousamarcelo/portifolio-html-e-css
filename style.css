@@ -79,3 +79,7 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     font-family: 'Montserrat', sans-serif;  
                    
 }
+
+.apresentacao__links__link:hover { /* aplicado na classe a animação de desteque dos botões  utilizando a classe + ":hover", se fosse só um dos botões era só escolhe a da ancora("a") desejado */
+    background-color: #272727;
+}
