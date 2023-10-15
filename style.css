@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh;                                              /* "vs" definindo a altura da tela em 100% do meta dado criado no html chamado "viewport" que fazer a inicializaçao padrão das elas em dispositivos */
+    /*height: 100vh;                                               "vs" definindo a altura da tela em 100% do meta dado criado no html chamado "viewport" que fazer a inicializaçao padrão das elas em dispositivos */
     box-sizing: border-box;                                     /* faz o controle dinamico para que os elemetos contidos na tag filho não transborde alem do elemento pai, se mantendo dentro do filho */
     background-color: black;                                  /* cor do plano de funco*/
     color: white;                                             /* cor do texto*/
@@ -24,7 +24,7 @@ fonte: https://css-tricks.com/snippets/css/a-guide-to-flexbox
 a tag main foi transformada em um flax box para controlar os espassamentos 
 */
 .apresentacao { 
-    margin: 10% 15%;                                            /* ajustando primeiro na vertical 10% depois nas laterais 15%*/
+    margin: 8% 15%;                                            /* ajustando primeiro na vertical 10% depois nas laterais 15%*/
     display: flex;                                              /* or inline-flex - habilitando o flex box na classe do main(.apresentacao), por que é nela que estão as informações que deverão ficar dentro do flex box, o flex box cria uma area delimitada dentro da tag pai onde ficaram todas as informaões desejadas */
     align-items: center;                                        /* centralizando as informação, por que o display: flex deita tudo na mesa linha porem desalinhaod */
     justify-content: space-between;                             /* controlando espassamento entre a section e a img ambos dentro do main que é um flexbox */
@@ -82,4 +82,14 @@ a tag main foi transformada em um flax box para controlar os espassamentos
 
 .apresentacao__links__link:hover { /* aplicado na classe a animação de desteque dos botões  utilizando a classe + ":hover", se fosse só um dos botões era só escolhe a da ancora("a") desejado */
     background-color: #272727;
+}
+
+.rodape{
+    padding: 24px;                                              /* ajustando padding, que é o pespassamento entre o texto a a borda */
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;    
 }
