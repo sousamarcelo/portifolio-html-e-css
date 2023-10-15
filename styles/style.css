@@ -1,6 +1,11 @@
 /* importado do sitem https://fonts.google.com/, biblioteca de fontes do googles*/
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;400;600&display=swap');
 
+:root{                                                           /* declaração de variaveis globais, as três primeira variaveis declaradas serão utilizadas para o padrão de cor do site, para evitar ter varios pontos de alterações no codigo, foi criado as variaveis para facilitar, tendo somente um ponto de alteração */
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciara: #22D4FD;
+}
 
 *{                                                              /* foi aplicado o reset CSS em todas as tags com o "*" para tirar qualquer formatação padrão que um ou outro browser possa ter, evitando espaços indesejados ou algo do tipo*/
     margin: 0;
