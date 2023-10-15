@@ -64,6 +64,9 @@ a tag main foi transformada em um flax box para controlar os espassamentos
 
 .apresentacao__links__link{                                    /* seletor especifico dos link, como são pareceido, os dois estão na mesma classe, configurando... */
     /* background-color: #22D4FD; */
+    display: flex;                                             /* adicionar flex box a tag "a", o objetivo é depois incluir um dos parametros de alinhamento do flex box para deixar tanto o icone quanto a texto alinhado */
+    justify-content: center;                                   /* alinhado textos no centro */    
+    gap: 16px;
     border: 2px solid #22D4FD;                               /* ajustando a borda dos botões conforme especificações do figma do projeto, o primeiro parametro refere-se a espessura da borda, segundo parametro "solid" refer-se ao estilo da linha, exemplo solida ou tracejada, terceiro parametro, refere-se a cor */
     width: 378px;
     text-align: center;
@@ -73,5 +76,6 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     padding: 21.5px 0;                                         /* valores para vertical e horizontal, com o não sera alterado o valor horizontal foi incluido 0 para ele */
     text-decoration: none;                                     /* retirando o subliando defaut dos links, é uma decoração padrão, basta colocar esse parametro como none */
     color: #F6F6F6;    
-    font-family: 'Montserrat', sans-serif;                             
+    font-family: 'Montserrat', sans-serif;  
+                   
 }
