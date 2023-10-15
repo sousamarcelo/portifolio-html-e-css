@@ -14,8 +14,20 @@ body {
     color: white;                                             /* cor do texto*/
 }
 
-.titulo-destaque {                                              /** para selecionar um classe em css é utilizado o "ponto" + o nome da classe criada la no HTML, essa classe fazer com que a alteração desejada seja feita somente na tag desejada, mesmo que haja outras tags com o mesmo nome, será diferenciada pela class */
-    color: #22f4fd;
+.cabecalho{
+    padding: 2% 0% 0% 15%;                                   /* primeiro valor: superiro, segundo valor: direito, terceiro valor: inferiro. quarto valor: preenchimento do lado esquerdo */
+}
+
+.cabecalho__menu{
+    display: flex;                                          /* flexbox habilitado para essa tag, ajustar a posição dos filhos dela */
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
 }
 
 /*
@@ -23,8 +35,9 @@ Flexbox é uma ferramenta do CSS que visa organizar os elementos de uma página 
 fonte: https://css-tricks.com/snippets/css/a-guide-to-flexbox
 a tag main foi transformada em um flax box para controlar os espassamentos 
 */
+
 .apresentacao { 
-    margin: 8% 15%;                                            /* ajustando primeiro na vertical 10% depois nas laterais 15%*/
+    margin: 5% 15%;                                            /* ajustando primeiro na vertical 10% depois nas laterais 15%*/
     display: flex;                                              /* or inline-flex - habilitando o flex box na classe do main(.apresentacao), por que é nela que estão as informações que deverão ficar dentro do flex box, o flex box cria uma area delimitada dentro da tag pai onde ficaram todas as informaões desejadas */
     align-items: center;                                        /* centralizando as informação, por que o display: flex deita tudo na mesa linha porem desalinhaod */
     justify-content: space-between;                             /* controlando espassamento entre a section e a img ambos dentro do main que é um flexbox */
@@ -40,7 +53,10 @@ a tag main foi transformada em um flax box para controlar os espassamentos
 .apresentacao__conteudo__titulo{
     font-size: 36px;
     font-family: 'Krona One', sans-serif;                       /* fonte krona one retirado da api do google fontes que está no importe. esse padrão está no proprio site*/
-   
+ }
+
+.titulo-destaque {                                              /** para selecionar um classe em css é utilizado o "ponto" + o nome da classe criada la no HTML, essa classe fazer com que a alteração desejada seja feita somente na tag desejada, mesmo que haja outras tags com o mesmo nome, será diferenciada pela class */
+    color: #22f4fd;
 }
 
 .apresentacao__conteudo__texto{
@@ -80,7 +96,7 @@ a tag main foi transformada em um flax box para controlar os espassamentos
                    
 }
 
-.apresentacao__links__link:hover { /* aplicado na classe a animação de desteque dos botões  utilizando a classe + ":hover", se fosse só um dos botões era só escolhe a da ancora("a") desejado */
+.apresentacao__links__link:hover {                              /* aplicado na classe a animação de desteque dos botões  utilizando a classe + ":hover", se fosse só um dos botões era só escolhe a da ancora("a") desejado */
     background-color: #272727;
 }
 
