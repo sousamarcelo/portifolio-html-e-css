@@ -53,7 +53,7 @@ a tag main foi transformada em um flax box para controlar os espassamentos
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;                                              /* ativando flax box para essa classe*/
     flex-direction:column;                                      /* via flex box ajustando posicionamento vertical*/
     gap: 40px;                                                  /*Propriedade do flex box, trata o espassamento entre um elemento e outro, nessa caso ele trabalhara juntamento com o parametro acima ajustado o espaço verfical*/
@@ -77,22 +77,22 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     display: flex;                                             /* inicializando flax box na div dos links para utilizar os recursos*/
     flex-direction: column;                                    /* sempre que criado um  flex-direction: column, por que ao adicionar um display: flex, automaticamente flex-direction: rows, ou seja por linha, mas queremos em coluna, desorganizando o alinhamento da "div" onde ficam os botões */
     justify-content: space-between;
-    align-items: center;                                        /* como o "flex-direction: column" está po coluna o alinhamento do "align-items: center" será na vertical */
-    gap: 32px;                                                  /* espaço entre os botões */
+    align-items: center;                                       /* como o "flex-direction: column" está po coluna o alinhamento do "align-items: center" será na vertical */
+    gap: 32px;                                                 /* espaço entre os botões */
 }
 
 .apresentacao__links__subtitulos{
-    font-family: var(--fonte-primaria);                       /* estilo da letra no h2 */
-    font-weight: 400;                                           /* peso da fonte no h2 */
-    font-size: 1.5rem;                                            /* tamanho da fonte do h2 */
+    font-family: var(--fonte-primaria);                        /* estilo da letra no h2 */
+    font-weight: 400;                                          /* peso da fonte no h2 */
+    font-size: 1.5rem;                                         /* tamanho da fonte do h2 */
 }
 
-.apresentacao__links__link{                                    /* seletor especifico dos link, como são pareceido, os dois estão na mesma classe, configurando... */    
+.apresentacao__links__navegacao{                                    /* seletor especifico dos link, como são pareceido, os dois estão na mesma classe, configurando... */    
     display: flex;                                             /* adicionar flex box a tag "a", o objetivo é depois incluir um dos parametros de alinhamento do flex box para deixar tanto o icone quanto a texto alinhado */
     justify-content: center;                                   /* alinhado textos no centro */    
     gap: 16px;
     border: 2px solid var(--cor-terciara);                               /* ajustando a borda dos botões conforme especificações do figma do projeto, o primeiro parametro refere-se a espessura da borda, segundo parametro "solid" refer-se ao estilo da linha, exemplo solida ou tracejada, terceiro parametro, refere-se a cor */
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;                                        /* arredondamento da bordar */
     font-size: 1.5rem;
@@ -106,6 +106,10 @@ a tag main foi transformada em um flax box para controlar os espassamentos
 
 .apresentacao__links__link:hover {                              /* aplicado na classe a animação de desteque dos botões  utilizando a classe + ":hover", se fosse só um dos botões era só escolhe a da ancora("a") desejado */
     background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+    width: 50%;
 }
 
 .rodape{
