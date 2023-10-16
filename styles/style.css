@@ -17,7 +17,6 @@
 }
 
 body {
-    /*height: 100vh;                                               "vs" definindo a altura da tela em 100% do meta dado criado no html chamado "viewport" que fazer a inicializaçao padrão das elas em dispositivos */
     box-sizing: border-box;                                     /* faz o controle dinamico para que os elemetos contidos na tag filho não transborde alem do elemento pai, se mantendo dentro do filho */
     background-color: var(--cor-primaria);                                  /* cor do plano de funco*/
     color: var(--cor-secundaria);                                             /* cor do texto*/
@@ -61,7 +60,7 @@ a tag main foi transformada em um flax box para controlar os espassamentos
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;                                       /* rem é media relacional, favorece inclusive a utilização das configurações de fonte do navegado, quando o usuario alterar a fonte do navegado com o rem o site responde ao temanha configurado no navegador*/
     font-family: var(--fonte-primaria);                       /* fonte krona one retirado da api do google fontes que está no importe. esse padrão está no proprio site*/
  }
 
@@ -88,8 +87,7 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     font-size: 24px;                                            /* tamanho da fonte do h2 */
 }
 
-.apresentacao__links__link{                                    /* seletor especifico dos link, como são pareceido, os dois estão na mesma classe, configurando... */
-    /* background-color: #22D4FD; */
+.apresentacao__links__link{                                    /* seletor especifico dos link, como são pareceido, os dois estão na mesma classe, configurando... */    
     display: flex;                                             /* adicionar flex box a tag "a", o objetivo é depois incluir um dos parametros de alinhamento do flex box para deixar tanto o icone quanto a texto alinhado */
     justify-content: center;                                   /* alinhado textos no centro */    
     gap: 16px;
