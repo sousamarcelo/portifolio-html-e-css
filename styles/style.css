@@ -33,7 +33,7 @@ body {
 
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciara);
     text-decoration: none;                                      /* retirando sublinhado padrão do link */
@@ -69,7 +69,7 @@ a tag main foi transformada em um flax box para controlar os espassamentos
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);                     /* fonte montserrat com peso 400 (a referencia do figma do estilo de letra) retirado da api do google fontes que está no importe. esse padrão está no proprio site*/
 }
 
@@ -84,7 +84,7 @@ a tag main foi transformada em um flax box para controlar os espassamentos
 .apresentacao__links__subtitulos{
     font-family: var(--fonte-primaria);                       /* estilo da letra no h2 */
     font-weight: 400;                                           /* peso da fonte no h2 */
-    font-size: 24px;                                            /* tamanho da fonte do h2 */
+    font-size: 1.5rem;                                            /* tamanho da fonte do h2 */
 }
 
 .apresentacao__links__link{                                    /* seletor especifico dos link, como são pareceido, os dois estão na mesma classe, configurando... */    
@@ -95,7 +95,7 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     width: 378px;
     text-align: center;
     border-radius: 8px;                                        /* arredondamento da bordar */
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;                                          /* peso da fonte retirado da api montserrat 600 seguindo padrão do figma*/ 
     padding: 21.5px 0;                                         /* valores para vertical e horizontal, com o não sera alterado o valor horizontal foi incluido 0 para ele */
     text-decoration: none;                                     /* retirando o subliando defaut dos links, é uma decoração padrão, basta colocar esse parametro como none */
@@ -114,6 +114,6 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     background-color: var(--cor-terciara);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;    
 }
