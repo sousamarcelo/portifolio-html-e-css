@@ -49,7 +49,8 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     margin: 5% 15%;                                             /* ajustando primeiro na vertical 10% depois nas laterais 15%*/
     display: flex;                                              /* or inline-flex - habilitando o flex box na classe do main(.apresentacao), por que é nela que estão as informações que deverão ficar dentro do flex box, o flex box cria uma area delimitada dentro da tag pai onde ficaram todas as informaões desejadas */
     align-items: center;                                        /* centralizando as informação, por que o display: flex deita tudo na mesa linha porem desalinhaod */
-    justify-content: space-between;                             /* controlando espassamento entre a section e a img ambos dentro do main que é um flexbox */
+    justify-content: space-between;
+    gap: 80px;                             /* controlando espassamento entre a section e a img ambos dentro do main que é um flexbox */
 }
 
 .apresentacao__conteudo{
@@ -120,4 +121,10 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;    
+}
+
+@media (max-width: 1200px) {
+    .apresentacao{
+        flex-direction: column-reverse;                         /* altera disposição dos elementos de linha para coluna e aplicar a posicionamento reverso, nesse caso a imagem vem primeiro depois o texto */
+    }
 }
