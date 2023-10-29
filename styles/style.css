@@ -141,6 +141,5 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     .apresentacao__conteudo{
         width: auto;                                            /* para telas pequenas foi zerado para preencher todo os espação, na classe principal está com 50% */
     }
-
     
 }
