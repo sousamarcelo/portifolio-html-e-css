@@ -124,7 +124,18 @@ a tag main foi transformada em um flax box para controlar os espassamentos
 }
 
 @media (max-width: 1200px) {
+   
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{                                           /* detalhe importante, como na classe principal ja tem flex box aplicado, não precisa declara-lo novamente aqui no @medi, basta utilizar os recursos */
+        justify-content: center;
+    }
+    
     .apresentacao{
         flex-direction: column-reverse;                         /* altera disposição dos elementos de linha para coluna e aplicar a posicionamento reverso, nesse caso a imagem vem primeiro depois o texto */
     }
+
+    
 }
