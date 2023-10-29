@@ -135,6 +135,11 @@ a tag main foi transformada em um flax box para controlar os espassamentos
     
     .apresentacao{
         flex-direction: column-reverse;                         /* altera disposição dos elementos de linha para coluna e aplicar a posicionamento reverso, nesse caso a imagem vem primeiro depois o texto */
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;                                            /* para telas pequenas foi zerado para preencher todo os espação, na classe principal está com 50% */
     }
 
     
